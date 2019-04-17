@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Buda:300|Cherry+Swash|Courgette|Delius|Flamenco|Lancelot|Merienda|Overlock+SC|Poiret+One|Sacramento|Sail|Tangerine|Unica+One');
+
+header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  margin-left: -10px;
+  padding-left: 10px;
+  background-color: hsl(100, 50%, 60%);
+  @media (max-width: 700px) {
+    flex-wrap: wrap;
+  }
+
+  #name {
+    font-size: 40px;
+    font-family: Cherry Swash;
+    padding-left: 28px;
+  }
+
+  nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      margin: 10px 0px 5px 420px;
+      justify-content: flex-end;
+      align-items: center;
+      text-align: center;
+      font-family: Cherry Swash, Columbia;
+      font-size: 20px;
+      width: 58vw;
+    }
+
+    li {
+      padding: 30px 20px 0px 100px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: #ddd;
+  }
+}
+
+p {
+  text-align: center;
+}
+
+#profile-link {
+  color: orange;
+  &:hover {
+    color: #ddd;
+  }
+}
+
+/**Welcome Section*/
+#welcome {
+  font-size: 62px;
+  font-family: Buda;
+  margin-top: 100px;
+  margin-left: 20px;
+}
+
+#welcome-section {
+  display: block;
+  height: 100vh;
+}
+
+#bio-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: space-around;
+
+  #bio-grid {
+    display: grid;
+    grid-template-rows: 40% 60%;
+    justify-items: center;
+    width: 500px;
+    margin: 0px 140px 40px 100px;
+    font-size: 20px;
+    font-family: Buda;
+
+    ul {
+      width: 500px;
+      text-align: center;
+    }
+  }
+
+  #biopic1 {
+    width: 280px;
+    height: auto;
+    margin: -60px 30px 30px 0px;
+  }
+}
+
+/**Projects Section*/
+#projects {
+  padding-top: 120px;
+}
+
+#work {
+  text-align: center;
+  font-size: 62px;
+  font-family: Buda;
+}
+
+#profile {
+  font-size: 20px;
+  font-family: Buda;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.project-tile {
+  background-color: blue;
+  position: relative;
+  width: 300px;
+  height: 150px;
+  margin: 5px 10px 5px 10px;
+}
+
+#tiles-box {
+  display: flex;
+  justify-content: center;
+
+  #tiles {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
